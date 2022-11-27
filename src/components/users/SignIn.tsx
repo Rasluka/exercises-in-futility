@@ -14,9 +14,11 @@ export default function SignIn() {
     const target = e.currentTarget.id;
     const newValue = e.currentTarget.value;
 
-    console.log(target, newValue);
-
     setSignInFormData({ ...signInFormData, [target]: newValue });
+  };
+
+  const onSignInBttClicked = (e: React.MouseEvent<HTMLElement>) => {
+    console.log("submitting this::: ", signInFormData);
   };
 
   return (
@@ -55,7 +57,11 @@ export default function SignIn() {
             value={signInFormData.password}
           />
 
-          <Button color="dark" className="mx-auto my-5">
+          <Button
+            color="dark"
+            className="mx-auto my-5"
+            onClick={onSignInBttClicked}
+          >
             <IoArrowForward className="mr-2 h-5 w-5" />
             Sign In
           </Button>
