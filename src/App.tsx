@@ -30,16 +30,12 @@ function App() {
     getCurrentUser().then(onGetCurrentUserSuccces).catch(onGetCurrentUserError);
   }, [onGetCurrentUserSuccces]);
 
-  // (response) => {
-  //   console.log("This is the current user: ", response.data.item);
-  // }
-
   return (
     <>
       <NavigationBar currentUser={currentUser} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<SignIn />} />
+        <Route path="/login" element={<SignIn currentUser={currentUser} />} />
       </Routes>
     </>
   );

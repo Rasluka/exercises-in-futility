@@ -13,7 +13,7 @@ export default function NavigationBar({ currentUser }: NavbarProps) {
 
   const onSignOutClicked = (e: React.MouseEvent<HTMLElement>) => {
     userLogOut()
-      .then(() => navigate("/"))
+      .then(() => navigate(0))
       .catch(() => console.log("We got an error"));
   };
 
