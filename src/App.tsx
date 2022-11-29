@@ -5,6 +5,7 @@ import { IUser, ICurrentUser } from "./interfaces/users.interface";
 import NavigationBar from "./components/NavigationBar";
 import Home from "./components/Home";
 import SignIn from "./components/users/SignIn";
+import Register from "./components/users/Register";
 import { getCurrentUser, getUserById } from "./services/userService";
 
 function App() {
@@ -36,6 +37,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<SignIn currentUser={currentUser} />} />
+        <Route
+          path="/register"
+          element={<Register currentUser={currentUser} />}
+        />
       </Routes>
     </>
   );
