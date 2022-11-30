@@ -3,10 +3,10 @@ import { Card, TextInput, Button, Label } from "flowbite-react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsKey } from "react-icons/bs";
 import { IoArrowForward } from "react-icons/io5";
-import { IUserSignIn } from "../../interfaces/users.interface";
+import { IUserSignIn } from "../../interfaces/users/users.interface";
 import { userSignIn } from "../../services/userService";
 import { useNavigate } from "react-router-dom";
-import { IUser } from "../../interfaces/users.interface";
+import { IUser } from "../../interfaces/users/users.interface";
 
 interface SignInProps {
   currentUser: IUser | null;

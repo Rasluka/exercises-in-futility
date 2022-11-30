@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Dropdown, Avatar, Button } from "flowbite-react";
-import { IUser } from "../interfaces/users.interface";
+import { IUser } from "../interfaces/users/users.interface";
 import { useNavigate } from "react-router-dom";
 import { userLogOut } from "../services/userService";
 
@@ -80,8 +80,8 @@ export default function NavigationBar({ currentUser }: NavbarProps) {
         <Navbar.Link href="/" className="text-lg" active={true}>
           Home
         </Navbar.Link>
-        <Navbar.Link href="/" className="text-lg">
-          About
+        <Navbar.Link href="/movies" className="text-lg">
+          Movies
         </Navbar.Link>
         <Navbar.Link href="/" className="text-lg">
           Services

@@ -5,7 +5,10 @@ import {
   onGlobalSuccess,
   onGlobalError,
 } from "./serviceUtils";
-import { IUserSignIn, IUserRegister } from "../interfaces/users.interface";
+import {
+  IUserSignIn,
+  IUserRegister,
+} from "../interfaces/users/users.interface";
 const rootApi = process.env.REACT_APP_ROOT_API;
 
 export const userSignIn = (payload: IUserSignIn) => {

@@ -3,10 +3,10 @@ import { Card, TextInput, Button, Label } from "flowbite-react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsKey, BsKeyFill } from "react-icons/bs";
 import { IoArrowForward } from "react-icons/io5";
-import { IUserRegister } from "../../interfaces/users.interface";
+import { IUserRegister } from "../../interfaces/users/users.interface";
 import { userRegister } from "../../services/userService";
 import { useNavigate } from "react-router-dom";
-import { IUser } from "../../interfaces/users.interface";
+import { IUser } from "../../interfaces/users/users.interface";
 import { BiImageAlt, BiUser } from "react-icons/bi";
 import { FaUserAlt } from "react-icons/fa";
 
